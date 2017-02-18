@@ -1,0 +1,69 @@
+<div class="wdghtml" taskKey="com.javarush.task.task29.task2909.big10">
+<h3>Рефакторинг (10)</h3>
+<p>Разберись с кодом в пакете <strong><span class="text-red">car</span></strong> (<em><strong>машина</strong></em>).<br />
+10.1. Замена конструктора фабричным методом.<br />
+10.1.1. Объяви классы <strong><span class="text-corporate">Truck</span></strong> (<strong>грузовик</strong>), <strong><span class="text-corporate">Sedan</span></strong> (<strong>седан</strong>) и <span class="text-corporate"><strong>Cabriolet</strong></span> (<strong>кабриолет</strong>), унаследованные от <strong><span class="text-corporate">Car</span></strong>.<br />
+10.1.2. Добавь в них конструкторы, принимающие <mark>int numberOfPassengers</mark>.<br />
+10.1.3. Добавь фабричный статический метод <mark>Car create(int type, int <strong>numberOfPassengers</strong>)</mark> в класс <strong><span class="text-corporate">Car</span></strong> и реализуй его.<br />
+10.1.4. Измени область видимости конструктора класса <span class="text-corporate"><strong>Car</strong></span>.</p>
+
+<hr>
+<h3>Рефакторинг (9)</h3>
+<p>9.1. Самоинкапсуляция поля. Перепиши метод <mark>incAverageGrade()</mark> используя <strong>сеттер</strong> и <strong>геттер</strong> для доступа к <mark class="green">averageGrade</mark>.<br />
+9.2. Замена поля-массива объектом. Замени массив <mark class="user">int[] size</mark> объектом нового типа <strong><span class="text-corporate">Size</span></strong>,<br />
+содержащим публичные поля: рост <span class="text-corporate">int</span> <mark class="user">height</mark> и вес <span class="text-corporate">int</span> <mark class="user">weight</mark>. Публичный класс <strong><span class="text-corporate">Size</span></strong> объяви<br />
+внутри класса <strong><span class="text-corporate">Human</span></strong>.<br />
+9.3. Инкапсуляция поля. Сокрой поле company в классе <strong><span class="text-corporate">Worker</span></strong>. Добавь <strong>сеттер</strong> и <strong>геттер</strong> для него.<br />
+9.4. Замена кодирования типа классом.<br />
+9.4.1. Объяви публичный класс группы крови <strong><span class="text-corporate">BloodGroup</span></strong> внутри пакета <strong><span class="text-red">human</span></strong>.<br />
+9.4.2. Добавь в класс <strong><span class="text-corporate">BloodGroup</span></strong> приватное константное поле <span class="text-corporate">int</span> <mark class="user">code</mark>, приватный конструктор,<br />
+принимающий <span class="text-corporate">int</span> и инициализирующий поле <mark class="user">code</mark>, <strong>геттер</strong> для поля класса.<br />
+9.4.3. Добавь в класс <strong><span class="text-corporate">BloodGroup</span></strong> статические методы <mark>first()</mark>, <mark>second()</mark>, <mark>third()</mark> и <mark>fourth()</mark>,<br />
+создающие и возвращающие объекты типа BloodGroup с правильным кодом внутри (<strong>1</strong>, <strong>2</strong>, <strong>3</strong> и <strong>4</strong> соответственно).<br />
+9.4.4. Примени в классе <span class="text-corporate"><strong>Human</strong></span> новый тип <strong><span class="text-corporate">BloodGroup</span></strong>.</p>
+
+<hr>
+<h3>Рефакторинг (8)</h3>
+<p>8.1. Удаление сеттера. Удали метод <mark>setId()</mark>. Поле <mark class="user">id</mark> должно устанавливаться только в момент<br />
+создания объекта.<br />
+8.2. Сокрытие метода (<em><strong>поля</strong></em>). Изменить область видимости поля <mark class="user">nextId</mark> в соответствии с<br />
+областью его использования.<br />
+8.3. Замена исключения проверкой условия. Перепиши метод <mark>removeStudent(int <strong>index</strong>)</mark>, чтобы<br />
+он удалял студента из списка студентов только, если он там есть. Метод не должен кидать<br />
+исключение.<br />
+8.4. Удаление управляющего флага. Перепиши метод <mark>findDimaOrSasha()</mark>, сохранив логику его<br />
+работы. В методе не должны использоваться флаги типа <span class="text-corporate">found</span>, воспользуйся оператором<br />
+<mark>break</mark>.</p>
+
+<hr>
+<h3>Рефакторинг (7)</h3>
+<p>7.1. Параметризация метода. Замени методы <mark>incAverageGradeBy01()</mark> и <mark>incAverageGradeBy02()</mark><br />
+одним методом <mark>incAverageGrade(double <strong>delta</strong>)</mark>.<br />
+7.2. Передача всего объекта. Перепиши метод <mark>addInfoAboutStudent()</mark>, чтобы он в качестве<br />
+параметра принимал объект типа <strong><span class="text-corporate">Student</span></strong>.<br />
+7.3. Замена параметра вызовом метода. Перепиши метод <mark>printInfoAboutStudent()</mark>, чтобы он не<br />
+требовал в качестве параметра имя студента, а получал его, вызвав соответствующий<br />
+метод у переданного объекта.<br />
+7.4. Замена параметров объектом. Перепиши методы <mark>setBeginningOfSession</mark> и <mark>setEndOfSession</mark>,<br />
+чтобы они вместо набора параметров принимали по одному объекту даты.</p>
+
+<hr>
+<h3>Рефакторинг (6)</h3>
+<p>6.1. Замена параметра набором специализированных методов. Замени метод <mark>setValue()</mark> класса<br />
+<span class="text-corporate"><strong>Student</strong></span> специализированными методами <mark>setCourse</mark> и <mark>setAverageGrade</mark>.<br />
+6.2. Добавление параметра. Добавить параметр с типом <span class="text-corporate">double</span> в метод <mark>getStudentWithAverageGrade()</mark>, чтобы было понятно с каким средним балом нужен студент.<br />
+Реализуй метод <mark>getStudentWithAverageGrade()</mark>.<br />
+6.3. Удаление параметра. Убери параметр из метода <mark>getStudentWithMaxAverageGrade()</mark>.<br />
+Реализуй этот метод, он должен возвращать студента с максимальным средним балом.<br />
+6.4. Разделение запроса и модификатора. Раздели метод <mark>getStudentWithMinAverageGradeAndExpel</mark> на <mark>Student getStudentWithMinAverageGrade()</mark> и <mark>void expel(Student <strong>student</strong>)</mark>. Первый метод должен возвратить студента с минимальным средним балом, а второй &#8212; отчислить переданного студента (<em>удалять из списка</em> <strong><span class="text-red">students</span></strong>).</p>
+
+<hr>
+<h3>Рефакторинг (5)</h3>
+<p>5.1. Создание шаблонного метода.<br />
+5.1.1. Добавь в класс <strong><span class="text-corporate">Human</span></strong> метод <mark>String getPosition()</mark>, который должен возвращать строку &#171;<em><strong>Человек</strong></em>&#171;.<br />
+5.1.2. Переопредели этот метод в классе <strong><span class="text-corporate">Student</span></strong> и <span class="text-corporate"><strong>Teacher</strong></span>. Метод должен возвращать &#171;<em><strong>Студент</strong></em>&#187; и &#171;<em><strong>Преподаватель</strong></em>&#187; соответственно.<br />
+5.1.3. Замени метод <mark>printData</mark> в подклассах шаблонным методом в базовом классе, использующим <mark>getPosition()</mark>.<br />
+5.2. Замена делегирования наследованием. Класс <strong><span class="text-corporate">Worker</span></strong> должен наследоваться от <strong><span class="text-corporate">Human</span></strong>, а не содержать его.<br />
+5.3. Переименование метода. Переименуй метод <mark>setSlr</mark>, чтобы было понятно сеттером чего является этот метод.</p>
+
+</div>
