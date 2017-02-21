@@ -12,7 +12,7 @@ public class ConsoleHelper {
     }
 
     public static String readString() {
-        String line = "";
+        String line;
         while (true) {
             try {
                 line = reader.readLine();
