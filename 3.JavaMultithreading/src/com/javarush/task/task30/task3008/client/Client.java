@@ -8,14 +8,13 @@ import com.javarush.task.task30.task3008.MessageType;
 import java.io.IOException;
 
 public class Client {
+    protected Connection connection;
+    private volatile boolean clientConnected = true;
 
-    public void main() {
+    public static void main(String[] args) {
         Client client = new Client();
         client.run();
     }
-
-    protected Connection connection;
-    private volatile boolean clientConnected = true;
 
     public void run() {
         SocketThread socketThread = getSocketThread();
