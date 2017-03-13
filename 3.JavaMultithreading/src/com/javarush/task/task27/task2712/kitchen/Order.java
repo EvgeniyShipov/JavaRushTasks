@@ -19,7 +19,19 @@ public class Order {
         if (dishes.isEmpty()) {
             return "";
         } else {
-            return "Your order: " + dishes + " of " + tablet;
+            return "Your order: " + dishes + " of " + tablet + ", cooking time " + getTotalCookingTime() +"min";
         }
+    }
+
+    public boolean isEmpty() {
+        return dishes.isEmpty();
+    }
+
+    public int getTotalCookingTime() {
+        int totalCookingTime = 0;
+        for (Dish d: dishes) {
+            totalCookingTime +=d.getDuration();
+        }
+        return totalCookingTime;
     }
 }
