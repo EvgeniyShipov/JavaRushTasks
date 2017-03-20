@@ -17,4 +17,20 @@ public class VideoSelectedEventDataRow implements EventDataRow {
         this.totalDuration = totalDuration;
         currentDate = new Date();
     }
+
+    public EventType getType() {
+        return EventType.SELECTED_VIDEOS;
+    }
+
+    public Date getDate() {
+        return currentDate;
+    }
+
+    public int getTime() {
+        return totalDuration;
+    }
+
+    public long getAmount() {
+        return amount;
+    }
 }

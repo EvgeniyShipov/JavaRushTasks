@@ -1,6 +1,8 @@
 package com.javarush.task.task27.task2712.ad;
 
 import com.javarush.task.task27.task2712.ConsoleHelper;
+import com.javarush.task.task27.task2712.statistic.StatisticManager;
+import com.javarush.task.task27.task2712.statistic.event.VideoSelectedEventDataRow;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -30,6 +32,7 @@ public class AdvertisementManager {
                     }
                 }
             });
+            StatisticManager.getInstance().register(new VideoSelectedEventDataRow(bestList, allAmount(bestList), allDuration(bestList)));
             for (Advertisement ad : bestList) {
                 ad.revalidate();
                 ConsoleHelper.writeMessage(ad.getName() + " is displaying... " + ad.getAmountPerOneDisplaying() + ", " + ((ad.getAmountPerOneDisplaying() * 1000) / ad.getDuration()));

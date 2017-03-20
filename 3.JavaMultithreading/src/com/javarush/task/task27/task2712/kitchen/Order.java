@@ -34,4 +34,12 @@ public class Order {
         }
         return totalCookingTime;
     }
+
+    public List<Dish> getDishes() {
+        return dishes;
+    }
+
+    public Tablet getTablet() {
+        return tablet;
+    }
 }
