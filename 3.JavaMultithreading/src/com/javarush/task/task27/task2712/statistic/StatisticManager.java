@@ -98,9 +98,9 @@ public class StatisticManager {
                 if (dateFormat.format(eventDataRow.getDate()).equals(dateFormat.format(date))) {
                     CookedOrderEventDataRow cooked = (CookedOrderEventDataRow) eventDataRow;
                     if (map.containsKey(cooked.getCookName())) {
-                        map.put(cooked.getCookName(), map.get(cooked.getCookName()) + cooked.getTime());
+                        map.put(cooked.getCookName(), map.get(cooked.getCookName()) + (cooked.getTime() / 60));
                     } else {
-                        map.put(cooked.getCookName(), cooked.getTime());
+                        map.put(cooked.getCookName(), (cooked.getTime() / 60));
                     }
                 }
             }

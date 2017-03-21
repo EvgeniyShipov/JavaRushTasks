@@ -23,6 +23,6 @@ public class Cook extends Observable implements Observer {
         ConsoleHelper.writeMessage("Start cooking - " + or);
         setChanged();
         notifyObservers(or);
-        StatisticManager.getInstance().register(new CookedOrderEventDataRow(or.getTablet().toString(), this.name, or.getTotalCookingTime(), or.getDishes()));
+        StatisticManager.getInstance().register(new CookedOrderEventDataRow(or.getTablet().toString(), this.name, or.getTotalCookingTime() * 60, or.getDishes()));
     }
 }
