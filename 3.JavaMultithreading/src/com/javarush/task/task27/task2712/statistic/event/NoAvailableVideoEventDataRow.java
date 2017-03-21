@@ -15,7 +15,6 @@ public class NoAvailableVideoEventDataRow implements EventDataRow {
         return EventType.NO_AVAILABLE_VIDEO;
     }
 
-
     public Date getDate() {
         return currentDate;
     }

@@ -2,24 +2,40 @@ package com.javarush.task.task27.task2712;
 
 import com.javarush.task.task27.task2712.statistic.StatisticManager;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 
 public class DirectorTablet {
     public void printAdvertisementProfit() {
-        Map<Date, Long> map = StatisticManager.getInstance().allAmount();
-        long total = 0;
-        for (Map.Entry<Date, Long> entry : map.entrySet()) {
+        Map<Date, Double> map = StatisticManager.getInstance().allAmount();
+        DateFormat dateFormat = new SimpleDateFormat("dd-MMM-yyyy", Locale.ENGLISH);
+        double total = 0;
+        for (Map.Entry<Date, Double> entry : map.entrySet()) {
             Date date = entry.getKey();
-            Long amount = entry.getValue();
-            System.out.println(date + " - " + amount);
+            Double amount = entry.getValue();
+            System.out.println(dateFormat.format(date) + " - " + String.format(Locale.ENGLISH, "%(.2f", amount / 100));
             total += amount;
         }
-        System.out.println("Total - " + total);
+        System.out.println("Total - " + String.format(Locale.ENGLISH, "%(.2f", total / 100));
+        System.out.println();
     }
 
     public void printCookWorkloading() {
-
+        Map<Date, List<String>> map = StatisticManager.getInstance().cookTime();
+        DateFormat dateFormat = new SimpleDateFormat("dd-MMM-yyyy", Locale.ENGLISH);
+        for (Map.Entry<Date, List<String>> entry : map.entrySet()) {
+            Date date = entry.getKey();
+            List<String> cooks = entry.getValue();
+            System.out.println(dateFormat.format(date));
+            for (String s: cooks) {
+                System.out.println(s);
+            }
+            System.out.println();
+        }
     }
 
     public void printActiveVideoSet() {

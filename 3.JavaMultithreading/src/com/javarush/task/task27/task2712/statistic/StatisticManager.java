@@ -1,10 +1,12 @@
 package com.javarush.task.task27.task2712.statistic;
 
 import com.javarush.task.task27.task2712.kitchen.Cook;
+import com.javarush.task.task27.task2712.statistic.event.CookedOrderEventDataRow;
 import com.javarush.task.task27.task2712.statistic.event.EventDataRow;
 import com.javarush.task.task27.task2712.statistic.event.EventType;
 import com.javarush.task.task27.task2712.statistic.event.VideoSelectedEventDataRow;
 
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class StatisticManager {
@@ -27,19 +29,39 @@ public class StatisticManager {
         cooks.add(cook);
     }
 
-    public Map<Date, Long> allAmount() {
-        HashMap<Date, Long> map = new HashMap<>();
+    public Map<Date, Double> allAmount() {
+        HashMap<Date, Double> map = new HashMap<>();
         Date currentDate = new Date();
 
-        while (currentDate.getDay() > 0) {
-            long amountForDay = statisticStorage.getAmountForAdvertisement(currentDate);
+        while (currentDate.getTime() > 0) {
+            double amountForDay = statisticStorage.getAmountForAdvertisement(currentDate);
             if (amountForDay != 0) {
-                map.put(currentDate, amountForDay);
+                map.put(new Date(currentDate.getTime()), amountForDay);
             }
-            currentDate.setTime(currentDate.getTime() - 86400);
+            currentDate.setTime(currentDate.getTime() - 86400000);
         }
         return map;
     }
+
+    public Map<Date, List<String>> cookTime() {
+        HashMap<Date, List<String>> map = new HashMap<>();
+        Date currentDate = new Date();
+        while (currentDate.getTime() > 0) {
+            Map<String, Integer> cookWorkingTime = statisticStorage.getCookWorkingTime(currentDate);
+            if (!cookWorkingTime.isEmpty()) {
+                ArrayList<String> cooksList = new ArrayList<>();
+                for (Map.Entry<String, Integer> entry : cookWorkingTime.entrySet()) {
+                    String cook = entry.getKey();
+                    int time = entry.getValue();
+                    cooksList.add(cook + " - " + time + " min");
+                }
+                map.put(new Date(currentDate.getTime()), cooksList);
+            }
+            currentDate.setTime(currentDate.getTime() - 86400000);
+        }
+        return map;
+    }
+
 
     private class StatisticStorage {
         private final Map<EventType, List<EventDataRow>> storage;
@@ -55,17 +77,34 @@ public class StatisticManager {
             storage.get(data.getType()).add(data);
         }
 
-        private long getAmountForAdvertisement(Date date) {
+        private double getAmountForAdvertisement(Date date) {
             List<EventDataRow> eventDataRows = storage.get(EventType.SELECTED_VIDEOS);
-            long allAmount = 0;
-            for (EventDataRow eventDataRow: eventDataRows) {
-                if (eventDataRow.getDate().getDay() == date.getDay()) {
+            SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MMM-yyyy");
+            double allAmount = 0;
+            for (EventDataRow eventDataRow : eventDataRows) {
+                if (dateFormat.format(eventDataRow.getDate()).equals(dateFormat.format(date))) {
                     VideoSelectedEventDataRow video = (VideoSelectedEventDataRow) eventDataRow;
-                    long amount = video.getAmount();
-                    allAmount = +amount;
+                    allAmount += video.getAmount();
                 }
             }
             return allAmount;
+        }
+
+        private Map<String, Integer> getCookWorkingTime(Date date) {
+            HashMap<String, Integer> map = new HashMap<>();
+            List<EventDataRow> eventDataRows = storage.get(EventType.COOKED_ORDER);
+            SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MMM-yyyy");
+            for (EventDataRow eventDataRow : eventDataRows) {
+                if (dateFormat.format(eventDataRow.getDate()).equals(dateFormat.format(date))) {
+                    CookedOrderEventDataRow cooked = (CookedOrderEventDataRow) eventDataRow;
+                    if (map.containsKey(cooked.getCookName())) {
+                        map.put(cooked.getCookName(), map.get(cooked.getCookName()) + cooked.getTime());
+                    } else {
+                        map.put(cooked.getCookName(), cooked.getTime());
+                    }
+                }
+            }
+            return map;
         }
     }
 }
