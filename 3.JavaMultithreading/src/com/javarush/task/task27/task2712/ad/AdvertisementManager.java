@@ -5,8 +5,6 @@ import com.javarush.task.task27.task2712.statistic.StatisticManager;
 import com.javarush.task.task27.task2712.statistic.event.VideoSelectedEventDataRow;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 public class AdvertisementManager {
@@ -23,25 +21,25 @@ public class AdvertisementManager {
         if (bestList.isEmpty()) {
             throw new NoVideoAvailableException();
         } else {
-            Collections.sort(bestList, new Comparator<Advertisement>() {
-                public int compare(Advertisement o1, Advertisement o2) {
-                    if (o2.getAmountPerOneDisplaying() != o1.getAmountPerOneDisplaying()) {
-                        return (int) ((o2.getAmountPerOneDisplaying() - o1.getAmountPerOneDisplaying()));
-                    } else {
-                        return (int) (((o1.getAmountPerOneDisplaying() * 1000) / o1.getDuration() - (o2.getAmountPerOneDisplaying() * 1000) / o2.getDuration()));
-                    }
+            bestList.sort((o1, o2) -> {
+                if (o2.getAmountPerOneDisplaying() != o1.getAmountPerOneDisplaying()) {
+                    return (int) ((o2.getAmountPerOneDisplaying() - o1.getAmountPerOneDisplaying()));
+                } else {
+                    return (int) (((o1.getAmountPerOneDisplaying() * 1000) / o1.getDuration() - (o2.getAmountPerOneDisplaying() * 1000) / o2.getDuration()));
                 }
             });
             StatisticManager.getInstance().register(new VideoSelectedEventDataRow(bestList, allAmount(bestList), allDuration(bestList)));
-            for (Advertisement ad : bestList) {
+            bestList.forEach(ad -> {
                 ad.revalidate();
-                ConsoleHelper.writeMessage(ad.getName() + " is displaying... " + ad.getAmountPerOneDisplaying() + ", " + ((ad.getAmountPerOneDisplaying() * 1000) / ad.getDuration()));
-            }
+                ConsoleHelper.writeMessage(String.format("%s is displaying... %d, %d", ad.getName(),
+                        ad.getAmountPerOneDisplaying(), ((ad.getAmountPerOneDisplaying() * 1000) / ad.getDuration())));
+            });
         }
     }
 
     private void checkList(List<Advertisement> list) {
         boolean allHitsIsPositove = true;
+
         for (Advertisement ad : list) {
             if (ad.getHits() <= 0) {
                 allHitsIsPositove = false;
@@ -79,20 +77,16 @@ public class AdvertisementManager {
     }
 
     private int allDuration(List<Advertisement> list) {
-        int duration = 0;
-        for (Advertisement ad : list) {
-            duration += ad.getDuration();
-        }
-        return duration;
+        return list.stream()
+                .map(Advertisement::getDuration)
+                .reduce((a, b) -> a + b)
+                .orElse(0);
     }
 
     private long allAmount(List<Advertisement> list) {
-        long amount = 0;
-        for (Advertisement ad : list) {
-            amount += ad.getAmountPerOneDisplaying();
-        }
-        return amount;
+        return list.stream()
+                .map(Advertisement::getAmountPerOneDisplaying)
+                .reduce((a, b) -> a + b)
+                .orElse(0L);
     }
-
-
 }

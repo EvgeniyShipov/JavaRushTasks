@@ -1,13 +1,12 @@
 package com.javarush.task.task27.task2712;
 
+import com.javarush.task.task27.task2712.ad.Advertisement;
+import com.javarush.task.task27.task2712.ad.StatisticAdvertisementManager;
 import com.javarush.task.task27.task2712.statistic.StatisticManager;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
+import java.util.*;
 
 public class DirectorTablet {
     public void printAdvertisementProfit() {
@@ -31,7 +30,7 @@ public class DirectorTablet {
             Date date = entry.getKey();
             List<String> cooks = entry.getValue();
             System.out.println(dateFormat.format(date));
-            for (String s: cooks) {
+            for (String s : cooks) {
                 System.out.println(s);
             }
             System.out.println();
@@ -39,10 +38,17 @@ public class DirectorTablet {
     }
 
     public void printActiveVideoSet() {
-
+        StatisticAdvertisementManager.getInstance().getAdvertisements().stream()
+                .filter(advertisement -> advertisement.getHits() > 0)
+                .sorted(Comparator.comparing(advertisement -> advertisement.getName().toLowerCase()))
+                .forEach(advertisement -> System.out.println(String.format("%s - %d", advertisement.getName(), advertisement.getHits())));
     }
 
     public void printArchivedVideoSet() {
-
+        StatisticAdvertisementManager.getInstance().getAdvertisements().stream()
+                .filter(advertisement -> advertisement.getHits() == 0)
+                .sorted(Comparator.comparing(advertisement -> advertisement.getName().toLowerCase()))
+                .map(Advertisement::getName)
+                .forEach(System.out::println);
     }
 }

@@ -8,19 +8,15 @@ import java.util.List;
 
 public class Order {
     private final Tablet tablet;
-    private List<Dish> dishes;
+    protected List<Dish> dishes;
 
     public Order(Tablet tablet) throws IOException {
         this.tablet = tablet;
-        dishes = ConsoleHelper.getAllDishesForOrder();
+        initDishes();
     }
 
     public String toString() {
-        if (dishes.isEmpty()) {
-            return "";
-        } else {
-            return "Your order: " + dishes + " of " + tablet + ", cooking time " + getTotalCookingTime() +"min";
-        }
+        return this.isEmpty() ? "" : String.format("Your order: %s of %s, cooking time %smin", dishes, tablet, getTotalCookingTime());
     }
 
     public boolean isEmpty() {
@@ -28,11 +24,10 @@ public class Order {
     }
 
     public int getTotalCookingTime() {
-        int totalCookingTime = 0;
-        for (Dish d: dishes) {
-            totalCookingTime +=d.getDuration();
-        }
-        return totalCookingTime;
+        return dishes.stream()
+                .map(Dish::getDuration)
+                .reduce((a, b) -> a + b)
+                .orElse(0);
     }
 
     public List<Dish> getDishes() {
@@ -41,5 +36,9 @@ public class Order {
 
     public Tablet getTablet() {
         return tablet;
+    }
+
+    protected void initDishes() throws IOException {
+        dishes = ConsoleHelper.getAllDishesForOrder();
     }
 }

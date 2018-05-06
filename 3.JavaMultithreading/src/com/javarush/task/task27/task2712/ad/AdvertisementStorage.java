@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AdvertisementStorage {
+    private final static AdvertisementStorage instance = new AdvertisementStorage();
     private final List<Advertisement> videos = new ArrayList<>();
-    private static AdvertisementStorage ourInstance = new AdvertisementStorage();
 
     public static AdvertisementStorage getInstance() {
-        return ourInstance;
+        return instance;
     }
 
     private AdvertisementStorage() {
@@ -25,5 +25,4 @@ public class AdvertisementStorage {
     public void add(Advertisement advertisement) {
         videos.add(advertisement);
     }
-
 }

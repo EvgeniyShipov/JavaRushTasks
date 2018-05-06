@@ -10,12 +10,16 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class StatisticManager {
-    private static StatisticManager ourInstance = new StatisticManager();
+    private static StatisticManager instance = new StatisticManager();
     private StatisticStorage statisticStorage = new StatisticStorage();
     private Set<Cook> cooks = new HashSet<>();
 
     public static StatisticManager getInstance() {
-        return ourInstance;
+        return instance;
+    }
+
+    public Set<Cook> getCooks() {
+        return cooks;
     }
 
     private StatisticManager() {
@@ -69,7 +73,7 @@ public class StatisticManager {
         public StatisticStorage() {
             storage = new HashMap<>();
             for (EventType eventType : EventType.values()) {
-                storage.put(eventType, new ArrayList<EventDataRow>());
+                storage.put(eventType, new ArrayList<>());
             }
         }
 
