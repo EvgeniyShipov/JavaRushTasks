@@ -8976,3 +8976,6 @@ java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTyp
 2018-05-20 22:39:20 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
 2018-05-20 22:39:20 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
 2018-05-20 22:39:20 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: EditorToggleInsertState
+2018-05-20 22:39:35 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-20 22:40:15 INFO  ApacheHttpClient.testConnection(187) - responseCode = 200
+2018-05-20 22:40:15 INFO  ApacheHttpClient.testConnection(195) - result = true
