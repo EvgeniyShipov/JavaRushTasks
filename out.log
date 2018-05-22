@@ -1,10 +1,10 @@
-2018-05-22 23:39:46 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
-2018-05-22 23:39:46 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
-2018-05-22 23:39:46 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
-2018-05-22 23:39:46 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
-2018-05-22 23:39:46 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
-2018-05-22 23:39:46 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: EditorChooseLookupItem
-2018-05-22 23:39:47 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+2018-05-22 23:53:30 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-22 23:53:30 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-22 23:53:30 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-22 23:53:30 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-22 23:53:30 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-22 23:53:30 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: EditorEnter
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
 java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
 	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
 	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
@@ -15,59 +15,41 @@ java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTyp
 	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
 	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
 	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
-	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:145)
-	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:134)
-	at com.intellij.psi.impl.java.stubs.index.JavaShortClassNameIndex.get(JavaShortClassNameIndex.java:53)
-	at com.intellij.psi.impl.PsiShortNamesCacheImpl.getClassesByName(PsiShortNamesCacheImpl.java:63)
-	at com.intellij.psi.impl.CompositeShortNamesCache.getClassesByName(CompositeShortNamesCache.java:77)
-	at com.intellij.psi.impl.search.AllClassesSearchExecutor.lambda$processClassesByNames$1(AllClassesSearchExecutor.java:82)
-	at com.intellij.openapi.project.DumbService.lambda$runReadActionInSmartMode$0(DumbService.java:94)
-	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:125)
-	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:94)
-	at com.intellij.psi.impl.search.AllClassesSearchExecutor.processClassesByNames(AllClassesSearchExecutor.java:82)
-	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:150)
-	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:136)
-	at com.intellij.codeInsight.completion.JavaClassNameCompletionContributor.addAllClasses(JavaClassNameCompletionContributor.java:142)
-	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.suggestNonImportedClasses(JavaNoVariantsDelegator.java:186)
-	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.fillCompletionVariants(JavaNoVariantsDelegator.java:76)
-	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:83)
-	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:149)
-	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:142)
-	at com.intellij.codeInsight.completion.JShellCompletionContributor.fillCompletionVariants(JShellCompletionContributor.java:28)
-	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:83)
-	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:149)
-	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:142)
-	at com.intellij.codeInsight.template.impl.LiveTemplateCompletionContributor$2.addCompletions(LiveTemplateCompletionContributor.java:90)
-	at com.intellij.codeInsight.completion.CompletionProvider.addCompletionVariants(CompletionProvider.java:36)
-	at com.intellij.codeInsight.completion.CompletionContributor.fillCompletionVariants(CompletionContributor.java:152)
-	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:83)
-	at com.intellij.codeInsight.completion.CompletionService.performCompletion(CompletionService.java:112)
-	at com.intellij.codeInsight.completion.CompletionProgressIndicator.calculateItems(CompletionProgressIndicator.java:839)
-	at com.intellij.codeInsight.completion.CompletionProgressIndicator.access$600(CompletionProgressIndicator.java:92)
-	at com.intellij.codeInsight.completion.CompletionProgressIndicator$1CalculateItems.run(CompletionProgressIndicator.java:821)
-	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1127)
-	at com.intellij.codeInsight.completion.AsyncCompletion.tryReadOrCancel(CompletionThreading.java:181)
-	at com.intellij.codeInsight.completion.CompletionProgressIndicator.lambda$startCompletion$6(CompletionProgressIndicator.java:832)
-	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$null$0(CompletionThreading.java:108)
-	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$1(CoreProgressManager.java:157)
-	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:543)
-	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:488)
-	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:94)
-	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:144)
-	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$startThread$1(CompletionThreading.java:104)
-	at com.intellij.openapi.application.impl.ApplicationImpl$1.run(ApplicationImpl.java:315)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-2018-05-22 23:39:47 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
-2018-05-22 23:39:47 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
-2018-05-22 23:39:47 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
-2018-05-22 23:39:47 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
-2018-05-22 23:39:47 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
-2018-05-22 23:39:47 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: EditorChooseLookupItem
-2018-05-22 23:40:05 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.processFieldsWithName(PsiShortNamesCacheImpl.java:219)
+	at com.intellij.psi.impl.CompositeShortNamesCache.processFieldsWithName(CompositeShortNamesCache.java:273)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportConstantFix.getMembersToImport(StaticImportConstantFix.java:74)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.doFix(StaticImportMemberFix.java:108)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.showHint(StaticImportMemberFix.java:152)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.showAddImportHint(ShowAutoImportPass.java:147)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.addImports(ShowAutoImportPass.java:97)
+	at com.intellij.openapi.application.TransactionGuardImpl.runSyncTransaction(TransactionGuardImpl.java:88)
+	at com.intellij.openapi.application.TransactionGuardImpl.lambda$pollQueueLater$0(TransactionGuardImpl.java:74)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:424)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:407)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:762)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:732)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:822)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:650)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:366)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: Generate
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
 java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
 	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
 	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
@@ -78,59 +60,41 @@ java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTyp
 	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
 	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
 	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
-	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:145)
-	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:134)
-	at com.intellij.psi.impl.java.stubs.index.JavaShortClassNameIndex.get(JavaShortClassNameIndex.java:53)
-	at com.intellij.psi.impl.PsiShortNamesCacheImpl.getClassesByName(PsiShortNamesCacheImpl.java:63)
-	at com.intellij.psi.impl.CompositeShortNamesCache.getClassesByName(CompositeShortNamesCache.java:77)
-	at com.intellij.psi.impl.search.AllClassesSearchExecutor.lambda$processClassesByNames$1(AllClassesSearchExecutor.java:82)
-	at com.intellij.openapi.project.DumbService.lambda$runReadActionInSmartMode$0(DumbService.java:94)
-	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:125)
-	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:94)
-	at com.intellij.psi.impl.search.AllClassesSearchExecutor.processClassesByNames(AllClassesSearchExecutor.java:82)
-	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:150)
-	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:136)
-	at com.intellij.codeInsight.completion.JavaClassNameCompletionContributor.addAllClasses(JavaClassNameCompletionContributor.java:142)
-	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.suggestNonImportedClasses(JavaNoVariantsDelegator.java:186)
-	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.fillCompletionVariants(JavaNoVariantsDelegator.java:76)
-	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:83)
-	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:149)
-	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:142)
-	at com.intellij.codeInsight.completion.JShellCompletionContributor.fillCompletionVariants(JShellCompletionContributor.java:28)
-	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:83)
-	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:149)
-	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:142)
-	at com.intellij.codeInsight.template.impl.LiveTemplateCompletionContributor$2.addCompletions(LiveTemplateCompletionContributor.java:90)
-	at com.intellij.codeInsight.completion.CompletionProvider.addCompletionVariants(CompletionProvider.java:36)
-	at com.intellij.codeInsight.completion.CompletionContributor.fillCompletionVariants(CompletionContributor.java:152)
-	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:83)
-	at com.intellij.codeInsight.completion.CompletionService.performCompletion(CompletionService.java:112)
-	at com.intellij.codeInsight.completion.CompletionProgressIndicator.calculateItems(CompletionProgressIndicator.java:839)
-	at com.intellij.codeInsight.completion.CompletionProgressIndicator.access$600(CompletionProgressIndicator.java:92)
-	at com.intellij.codeInsight.completion.CompletionProgressIndicator$1CalculateItems.run(CompletionProgressIndicator.java:821)
-	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1127)
-	at com.intellij.codeInsight.completion.AsyncCompletion.tryReadOrCancel(CompletionThreading.java:181)
-	at com.intellij.codeInsight.completion.CompletionProgressIndicator.lambda$startCompletion$6(CompletionProgressIndicator.java:832)
-	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$null$0(CompletionThreading.java:108)
-	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$1(CoreProgressManager.java:157)
-	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:543)
-	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:488)
-	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:94)
-	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:144)
-	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$startThread$1(CompletionThreading.java:104)
-	at com.intellij.openapi.application.impl.ApplicationImpl$1.run(ApplicationImpl.java:315)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-2018-05-22 23:40:05 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
-2018-05-22 23:40:05 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
-2018-05-22 23:40:05 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
-2018-05-22 23:40:05 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
-2018-05-22 23:40:05 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
-2018-05-22 23:40:05 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: EditorChooseLookupItem
-2018-05-22 23:40:05 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.processFieldsWithName(PsiShortNamesCacheImpl.java:219)
+	at com.intellij.psi.impl.CompositeShortNamesCache.processFieldsWithName(CompositeShortNamesCache.java:273)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportConstantFix.getMembersToImport(StaticImportConstantFix.java:74)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.doFix(StaticImportMemberFix.java:108)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.showHint(StaticImportMemberFix.java:152)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.showAddImportHint(ShowAutoImportPass.java:147)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.addImports(ShowAutoImportPass.java:97)
+	at com.intellij.openapi.application.TransactionGuardImpl.runSyncTransaction(TransactionGuardImpl.java:88)
+	at com.intellij.openapi.application.TransactionGuardImpl.lambda$pollQueueLater$0(TransactionGuardImpl.java:74)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:424)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:407)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:762)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:732)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:822)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:650)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:366)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: Generate
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
 java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
 	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
 	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
@@ -141,70 +105,982 @@ java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTyp
 	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
 	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
 	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
-	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:145)
-	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:134)
-	at com.intellij.psi.impl.java.stubs.index.JavaShortClassNameIndex.get(JavaShortClassNameIndex.java:53)
-	at com.intellij.psi.impl.PsiShortNamesCacheImpl.getClassesByName(PsiShortNamesCacheImpl.java:63)
-	at com.intellij.psi.impl.CompositeShortNamesCache.getClassesByName(CompositeShortNamesCache.java:77)
-	at com.intellij.psi.impl.search.AllClassesSearchExecutor.lambda$processClassesByNames$1(AllClassesSearchExecutor.java:82)
-	at com.intellij.openapi.project.DumbService.lambda$runReadActionInSmartMode$0(DumbService.java:94)
-	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:125)
-	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:94)
-	at com.intellij.psi.impl.search.AllClassesSearchExecutor.processClassesByNames(AllClassesSearchExecutor.java:82)
-	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:150)
-	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:136)
-	at com.intellij.codeInsight.completion.JavaClassNameCompletionContributor.addAllClasses(JavaClassNameCompletionContributor.java:142)
-	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.suggestNonImportedClasses(JavaNoVariantsDelegator.java:186)
-	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.fillCompletionVariants(JavaNoVariantsDelegator.java:76)
-	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:83)
-	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:149)
-	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:142)
-	at com.intellij.codeInsight.completion.JShellCompletionContributor.fillCompletionVariants(JShellCompletionContributor.java:28)
-	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:83)
-	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:149)
-	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:142)
-	at com.intellij.codeInsight.template.impl.LiveTemplateCompletionContributor$2.addCompletions(LiveTemplateCompletionContributor.java:90)
-	at com.intellij.codeInsight.completion.CompletionProvider.addCompletionVariants(CompletionProvider.java:36)
-	at com.intellij.codeInsight.completion.CompletionContributor.fillCompletionVariants(CompletionContributor.java:152)
-	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:83)
-	at com.intellij.codeInsight.completion.CompletionService.performCompletion(CompletionService.java:112)
-	at com.intellij.codeInsight.completion.CompletionProgressIndicator.calculateItems(CompletionProgressIndicator.java:839)
-	at com.intellij.codeInsight.completion.CompletionProgressIndicator.access$600(CompletionProgressIndicator.java:92)
-	at com.intellij.codeInsight.completion.CompletionProgressIndicator$1CalculateItems.run(CompletionProgressIndicator.java:821)
-	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1127)
-	at com.intellij.codeInsight.completion.AsyncCompletion.tryReadOrCancel(CompletionThreading.java:181)
-	at com.intellij.codeInsight.completion.CompletionProgressIndicator.lambda$startCompletion$6(CompletionProgressIndicator.java:832)
-	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$null$0(CompletionThreading.java:108)
-	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$1(CoreProgressManager.java:157)
-	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:543)
-	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:488)
-	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:94)
-	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:144)
-	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$startThread$1(CompletionThreading.java:104)
-	at com.intellij.openapi.application.impl.ApplicationImpl$1.run(ApplicationImpl.java:315)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-2018-05-22 23:40:05 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
-2018-05-22 23:40:05 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
-2018-05-22 23:40:05 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
-2018-05-22 23:40:05 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
-2018-05-22 23:40:05 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
-2018-05-22 23:40:05 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: EditorChooseLookupItem
-2018-05-22 23:40:11 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
-2018-05-22 23:41:07 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
-2018-05-22 23:41:07 INFO  ApacheHttpClient.getTask(421) - responseCode = 200
-2018-05-22 23:41:07 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
-2018-05-22 23:41:08 INFO  ApacheHttpClient.testConnection(187) - responseCode = 200
-2018-05-22 23:41:08 INFO  ApacheHttpClient.testConnection(195) - result = true
-2018-05-22 23:41:09 INFO  ApacheHttpClient.completed(27) - responseCode = 200
-2018-05-22 23:41:09 INFO  ApacheHttpClient.getTask(421) - responseCode = 200
-2018-05-22 23:41:11 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
-2018-05-22 23:41:11 INFO  ApacheHttpClient.getFilteredTasks(323) - responseCode = 200
-2018-05-22 23:41:11 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.processFieldsWithName(PsiShortNamesCacheImpl.java:219)
+	at com.intellij.psi.impl.CompositeShortNamesCache.processFieldsWithName(CompositeShortNamesCache.java:273)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportConstantFix.getMembersToImport(StaticImportConstantFix.java:74)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.doFix(StaticImportMemberFix.java:108)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.showHint(StaticImportMemberFix.java:152)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.showAddImportHint(ShowAutoImportPass.java:147)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.addImports(ShowAutoImportPass.java:97)
+	at com.intellij.openapi.application.TransactionGuardImpl.runSyncTransaction(TransactionGuardImpl.java:88)
+	at com.intellij.openapi.application.TransactionGuardImpl.lambda$pollQueueLater$0(TransactionGuardImpl.java:74)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:424)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:407)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:762)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:732)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:822)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:650)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:366)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: Generate
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:54)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:327)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:618)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:606)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.processFieldsWithName(PsiShortNamesCacheImpl.java:219)
+	at com.intellij.psi.impl.CompositeShortNamesCache.processFieldsWithName(CompositeShortNamesCache.java:273)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportConstantFix.getMembersToImport(StaticImportConstantFix.java:74)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.doFix(StaticImportMemberFix.java:108)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.showHint(StaticImportMemberFix.java:152)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.showAddImportHint(ShowAutoImportPass.java:147)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.addImports(ShowAutoImportPass.java:97)
+	at com.intellij.openapi.application.TransactionGuardImpl.runSyncTransaction(TransactionGuardImpl.java:88)
+	at com.intellij.openapi.application.TransactionGuardImpl.lambda$pollQueueLater$0(TransactionGuardImpl.java:74)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:424)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:407)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:762)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:732)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:822)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:650)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:366)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: Generate
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:54)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:327)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:618)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:606)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.processFieldsWithName(PsiShortNamesCacheImpl.java:219)
+	at com.intellij.psi.impl.CompositeShortNamesCache.processFieldsWithName(CompositeShortNamesCache.java:273)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportConstantFix.getMembersToImport(StaticImportConstantFix.java:74)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.doFix(StaticImportMemberFix.java:108)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.showHint(StaticImportMemberFix.java:152)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.showAddImportHint(ShowAutoImportPass.java:147)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.addImports(ShowAutoImportPass.java:97)
+	at com.intellij.openapi.application.TransactionGuardImpl.runSyncTransaction(TransactionGuardImpl.java:88)
+	at com.intellij.openapi.application.TransactionGuardImpl.lambda$submitTransaction$1(TransactionGuardImpl.java:111)
+	at com.intellij.openapi.application.TransactionGuardImpl.submitTransaction(TransactionGuardImpl.java:120)
+	at com.intellij.openapi.application.TransactionGuard.submitTransaction(TransactionGuard.java:122)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.doApplyInformationToEditor(ShowAutoImportPass.java:77)
+	at com.intellij.codeHighlighting.TextEditorHighlightingPass.applyInformationToEditor(TextEditorHighlightingPass.java:115)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService.lambda$applyInformationToEditorsLater$3(PassExecutorService.java:504)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:315)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:424)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:407)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:762)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:732)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:822)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:650)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:366)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-22 23:53:38 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: Generate
+2018-05-22 23:53:40 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:54)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:327)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:618)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:606)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.processFieldsWithName(PsiShortNamesCacheImpl.java:219)
+	at com.intellij.psi.impl.CompositeShortNamesCache.processFieldsWithName(CompositeShortNamesCache.java:273)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportConstantFix.getMembersToImport(StaticImportConstantFix.java:74)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.doFix(StaticImportMemberFix.java:108)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.showHint(StaticImportMemberFix.java:152)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.showAddImportHint(ShowAutoImportPass.java:147)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.addImports(ShowAutoImportPass.java:97)
+	at com.intellij.openapi.application.TransactionGuardImpl.runSyncTransaction(TransactionGuardImpl.java:88)
+	at com.intellij.openapi.application.TransactionGuardImpl.lambda$submitTransaction$1(TransactionGuardImpl.java:111)
+	at com.intellij.openapi.application.TransactionGuardImpl.submitTransaction(TransactionGuardImpl.java:120)
+	at com.intellij.openapi.application.TransactionGuard.submitTransaction(TransactionGuard.java:122)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.doApplyInformationToEditor(ShowAutoImportPass.java:77)
+	at com.intellij.codeHighlighting.TextEditorHighlightingPass.applyInformationToEditor(TextEditorHighlightingPass.java:115)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService.lambda$applyInformationToEditorsLater$3(PassExecutorService.java:504)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:315)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:424)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:407)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:762)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:732)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:822)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:650)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:366)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2018-05-22 23:53:40 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-22 23:53:40 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-22 23:53:40 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-22 23:53:40 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-22 23:53:40 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-22 23:53:40 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: Generate
+2018-05-22 23:53:41 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:54)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:327)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:618)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:606)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.processFieldsWithName(PsiShortNamesCacheImpl.java:219)
+	at com.intellij.psi.impl.CompositeShortNamesCache.processFieldsWithName(CompositeShortNamesCache.java:273)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportConstantFix.getMembersToImport(StaticImportConstantFix.java:74)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.doFix(StaticImportMemberFix.java:108)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.showHint(StaticImportMemberFix.java:152)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.showAddImportHint(ShowAutoImportPass.java:147)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.addImports(ShowAutoImportPass.java:97)
+	at com.intellij.openapi.application.TransactionGuardImpl.runSyncTransaction(TransactionGuardImpl.java:88)
+	at com.intellij.openapi.application.TransactionGuardImpl.lambda$submitTransaction$1(TransactionGuardImpl.java:111)
+	at com.intellij.openapi.application.TransactionGuardImpl.submitTransaction(TransactionGuardImpl.java:120)
+	at com.intellij.openapi.application.TransactionGuard.submitTransaction(TransactionGuard.java:122)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.doApplyInformationToEditor(ShowAutoImportPass.java:77)
+	at com.intellij.codeHighlighting.TextEditorHighlightingPass.applyInformationToEditor(TextEditorHighlightingPass.java:115)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService.lambda$applyInformationToEditorsLater$3(PassExecutorService.java:504)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:315)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:424)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:407)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:762)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:732)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:822)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:650)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:366)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2018-05-22 23:53:41 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-22 23:53:41 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-22 23:53:41 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-22 23:53:41 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-22 23:53:41 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-22 23:53:41 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: Generate
+2018-05-22 23:53:42 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:54)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:327)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:618)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:606)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.processFieldsWithName(PsiShortNamesCacheImpl.java:219)
+	at com.intellij.psi.impl.CompositeShortNamesCache.processFieldsWithName(CompositeShortNamesCache.java:273)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportConstantFix.getMembersToImport(StaticImportConstantFix.java:74)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.doFix(StaticImportMemberFix.java:108)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.showHint(StaticImportMemberFix.java:152)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.showAddImportHint(ShowAutoImportPass.java:147)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.addImports(ShowAutoImportPass.java:97)
+	at com.intellij.openapi.application.TransactionGuardImpl.runSyncTransaction(TransactionGuardImpl.java:88)
+	at com.intellij.openapi.application.TransactionGuardImpl.lambda$submitTransaction$1(TransactionGuardImpl.java:111)
+	at com.intellij.openapi.application.TransactionGuardImpl.submitTransaction(TransactionGuardImpl.java:120)
+	at com.intellij.openapi.application.TransactionGuard.submitTransaction(TransactionGuard.java:122)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.doApplyInformationToEditor(ShowAutoImportPass.java:77)
+	at com.intellij.codeHighlighting.TextEditorHighlightingPass.applyInformationToEditor(TextEditorHighlightingPass.java:115)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService.lambda$applyInformationToEditorsLater$3(PassExecutorService.java:504)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:315)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:424)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:407)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:762)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:732)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:822)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:650)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:366)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2018-05-22 23:53:42 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-22 23:53:42 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-22 23:53:42 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-22 23:53:42 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-22 23:53:42 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-22 23:53:42 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: Generate
+2018-05-22 23:53:43 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:54)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:327)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:618)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:606)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.processFieldsWithName(PsiShortNamesCacheImpl.java:219)
+	at com.intellij.psi.impl.CompositeShortNamesCache.processFieldsWithName(CompositeShortNamesCache.java:273)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportConstantFix.getMembersToImport(StaticImportConstantFix.java:74)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.doFix(StaticImportMemberFix.java:108)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.showHint(StaticImportMemberFix.java:152)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.showAddImportHint(ShowAutoImportPass.java:147)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.addImports(ShowAutoImportPass.java:97)
+	at com.intellij.openapi.application.TransactionGuardImpl.runSyncTransaction(TransactionGuardImpl.java:88)
+	at com.intellij.openapi.application.TransactionGuardImpl.lambda$submitTransaction$1(TransactionGuardImpl.java:111)
+	at com.intellij.openapi.application.TransactionGuardImpl.submitTransaction(TransactionGuardImpl.java:120)
+	at com.intellij.openapi.application.TransactionGuard.submitTransaction(TransactionGuard.java:122)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.doApplyInformationToEditor(ShowAutoImportPass.java:77)
+	at com.intellij.codeHighlighting.TextEditorHighlightingPass.applyInformationToEditor(TextEditorHighlightingPass.java:115)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService.lambda$applyInformationToEditorsLater$3(PassExecutorService.java:504)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:315)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:424)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:407)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:762)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:732)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:822)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:650)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:366)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2018-05-22 23:53:43 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-22 23:53:43 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-22 23:53:43 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-22 23:53:43 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-22 23:53:43 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-22 23:53:43 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: Generate
+2018-05-22 23:53:44 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:54)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:327)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:618)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:606)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.processFieldsWithName(PsiShortNamesCacheImpl.java:219)
+	at com.intellij.psi.impl.CompositeShortNamesCache.processFieldsWithName(CompositeShortNamesCache.java:273)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportConstantFix.getMembersToImport(StaticImportConstantFix.java:74)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.doFix(StaticImportMemberFix.java:108)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.showHint(StaticImportMemberFix.java:152)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.showAddImportHint(ShowAutoImportPass.java:147)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.addImports(ShowAutoImportPass.java:97)
+	at com.intellij.openapi.application.TransactionGuardImpl.runSyncTransaction(TransactionGuardImpl.java:88)
+	at com.intellij.openapi.application.TransactionGuardImpl.lambda$submitTransaction$1(TransactionGuardImpl.java:111)
+	at com.intellij.openapi.application.TransactionGuardImpl.submitTransaction(TransactionGuardImpl.java:120)
+	at com.intellij.openapi.application.TransactionGuard.submitTransaction(TransactionGuard.java:122)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.doApplyInformationToEditor(ShowAutoImportPass.java:77)
+	at com.intellij.codeHighlighting.TextEditorHighlightingPass.applyInformationToEditor(TextEditorHighlightingPass.java:115)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService.lambda$applyInformationToEditorsLater$3(PassExecutorService.java:504)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:315)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:424)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:407)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:762)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:732)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:822)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:650)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:366)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2018-05-22 23:53:44 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-22 23:53:44 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-22 23:53:44 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-22 23:53:44 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-22 23:53:44 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-22 23:53:44 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: Generate
+2018-05-22 23:53:47 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:54)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:327)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:618)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:606)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.processFieldsWithName(PsiShortNamesCacheImpl.java:219)
+	at com.intellij.psi.impl.CompositeShortNamesCache.processFieldsWithName(CompositeShortNamesCache.java:273)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportConstantFix.getMembersToImport(StaticImportConstantFix.java:74)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.doFix(StaticImportMemberFix.java:108)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.showHint(StaticImportMemberFix.java:152)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.showAddImportHint(ShowAutoImportPass.java:147)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.addImports(ShowAutoImportPass.java:93)
+	at com.intellij.openapi.application.TransactionGuardImpl.runSyncTransaction(TransactionGuardImpl.java:88)
+	at com.intellij.openapi.application.TransactionGuardImpl.lambda$submitTransaction$1(TransactionGuardImpl.java:111)
+	at com.intellij.openapi.application.TransactionGuardImpl.submitTransaction(TransactionGuardImpl.java:120)
+	at com.intellij.openapi.application.TransactionGuard.submitTransaction(TransactionGuard.java:122)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.doApplyInformationToEditor(ShowAutoImportPass.java:77)
+	at com.intellij.codeHighlighting.TextEditorHighlightingPass.applyInformationToEditor(TextEditorHighlightingPass.java:115)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService.lambda$applyInformationToEditorsLater$3(PassExecutorService.java:504)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:315)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:424)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:407)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:762)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:732)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:822)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:650)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:366)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2018-05-22 23:53:47 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-22 23:53:47 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-22 23:53:47 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-22 23:53:47 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-22 23:53:47 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-22 23:53:47 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: Generate
+2018-05-22 23:53:47 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:54)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:327)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:618)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:606)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.processFieldsWithName(PsiShortNamesCacheImpl.java:219)
+	at com.intellij.psi.impl.CompositeShortNamesCache.processFieldsWithName(CompositeShortNamesCache.java:273)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportConstantFix.getMembersToImport(StaticImportConstantFix.java:74)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.doFix(StaticImportMemberFix.java:108)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.showHint(StaticImportMemberFix.java:152)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.showAddImportHint(ShowAutoImportPass.java:147)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.addImports(ShowAutoImportPass.java:93)
+	at com.intellij.openapi.application.TransactionGuardImpl.runSyncTransaction(TransactionGuardImpl.java:88)
+	at com.intellij.openapi.application.TransactionGuardImpl.lambda$submitTransaction$1(TransactionGuardImpl.java:111)
+	at com.intellij.openapi.application.TransactionGuardImpl.submitTransaction(TransactionGuardImpl.java:120)
+	at com.intellij.openapi.application.TransactionGuard.submitTransaction(TransactionGuard.java:122)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.doApplyInformationToEditor(ShowAutoImportPass.java:77)
+	at com.intellij.codeHighlighting.TextEditorHighlightingPass.applyInformationToEditor(TextEditorHighlightingPass.java:115)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService.lambda$applyInformationToEditorsLater$3(PassExecutorService.java:504)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:315)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:424)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:407)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:762)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:732)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:822)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:650)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:366)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2018-05-22 23:53:47 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-22 23:53:47 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-22 23:53:47 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-22 23:53:47 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-22 23:53:47 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-22 23:53:47 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: Generate
+2018-05-22 23:53:48 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:54)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:327)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:618)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:606)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.processFieldsWithName(PsiShortNamesCacheImpl.java:219)
+	at com.intellij.psi.impl.CompositeShortNamesCache.processFieldsWithName(CompositeShortNamesCache.java:273)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportConstantFix.getMembersToImport(StaticImportConstantFix.java:74)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.doFix(StaticImportMemberFix.java:108)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.showHint(StaticImportMemberFix.java:152)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.showAddImportHint(ShowAutoImportPass.java:147)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.addImports(ShowAutoImportPass.java:93)
+	at com.intellij.openapi.application.TransactionGuardImpl.runSyncTransaction(TransactionGuardImpl.java:88)
+	at com.intellij.openapi.application.TransactionGuardImpl.lambda$submitTransaction$1(TransactionGuardImpl.java:111)
+	at com.intellij.openapi.application.TransactionGuardImpl.submitTransaction(TransactionGuardImpl.java:120)
+	at com.intellij.openapi.application.TransactionGuard.submitTransaction(TransactionGuard.java:122)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.doApplyInformationToEditor(ShowAutoImportPass.java:77)
+	at com.intellij.codeHighlighting.TextEditorHighlightingPass.applyInformationToEditor(TextEditorHighlightingPass.java:115)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService.lambda$applyInformationToEditorsLater$3(PassExecutorService.java:504)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:315)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:424)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:407)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:762)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:732)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:822)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:650)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:366)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2018-05-22 23:53:48 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-22 23:53:48 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-22 23:53:48 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-22 23:53:48 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-22 23:53:48 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-22 23:53:48 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: Generate
+2018-05-22 23:53:48 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:54)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:327)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:618)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:606)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.processFieldsWithName(PsiShortNamesCacheImpl.java:219)
+	at com.intellij.psi.impl.CompositeShortNamesCache.processFieldsWithName(CompositeShortNamesCache.java:273)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportConstantFix.getMembersToImport(StaticImportConstantFix.java:74)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.doFix(StaticImportMemberFix.java:108)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.showHint(StaticImportMemberFix.java:152)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.showAddImportHint(ShowAutoImportPass.java:147)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.addImports(ShowAutoImportPass.java:93)
+	at com.intellij.openapi.application.TransactionGuardImpl.runSyncTransaction(TransactionGuardImpl.java:88)
+	at com.intellij.openapi.application.TransactionGuardImpl.lambda$submitTransaction$1(TransactionGuardImpl.java:111)
+	at com.intellij.openapi.application.TransactionGuardImpl.submitTransaction(TransactionGuardImpl.java:120)
+	at com.intellij.openapi.application.TransactionGuard.submitTransaction(TransactionGuard.java:122)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.doApplyInformationToEditor(ShowAutoImportPass.java:77)
+	at com.intellij.codeHighlighting.TextEditorHighlightingPass.applyInformationToEditor(TextEditorHighlightingPass.java:115)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService.lambda$applyInformationToEditorsLater$3(PassExecutorService.java:504)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:315)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:424)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:407)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:762)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:732)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:822)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:650)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:366)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2018-05-22 23:53:48 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-22 23:53:48 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-22 23:53:48 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-22 23:53:48 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-22 23:53:48 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-22 23:53:48 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: Generate
+2018-05-22 23:54:11 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:54)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:327)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:618)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:606)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.processFieldsWithName(PsiShortNamesCacheImpl.java:219)
+	at com.intellij.psi.impl.CompositeShortNamesCache.processFieldsWithName(CompositeShortNamesCache.java:273)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportConstantFix.getMembersToImport(StaticImportConstantFix.java:74)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.doFix(StaticImportMemberFix.java:108)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.showHint(StaticImportMemberFix.java:152)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.showAddImportHint(ShowAutoImportPass.java:147)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.addImports(ShowAutoImportPass.java:97)
+	at com.intellij.openapi.application.TransactionGuardImpl.runSyncTransaction(TransactionGuardImpl.java:88)
+	at com.intellij.openapi.application.TransactionGuardImpl.lambda$pollQueueLater$0(TransactionGuardImpl.java:74)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:424)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:407)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:762)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:732)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:822)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:650)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:366)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: $Undo
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:54)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:327)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:618)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:606)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.processFieldsWithName(PsiShortNamesCacheImpl.java:219)
+	at com.intellij.psi.impl.CompositeShortNamesCache.processFieldsWithName(CompositeShortNamesCache.java:273)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportConstantFix.getMembersToImport(StaticImportConstantFix.java:74)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.doFix(StaticImportMemberFix.java:108)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.showHint(StaticImportMemberFix.java:152)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.showAddImportHint(ShowAutoImportPass.java:147)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.addImports(ShowAutoImportPass.java:97)
+	at com.intellij.openapi.application.TransactionGuardImpl.runSyncTransaction(TransactionGuardImpl.java:88)
+	at com.intellij.openapi.application.TransactionGuardImpl.lambda$pollQueueLater$0(TransactionGuardImpl.java:74)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:424)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:407)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:762)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:732)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:822)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:650)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:366)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: $Undo
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:54)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:327)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:618)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:606)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.processFieldsWithName(PsiShortNamesCacheImpl.java:219)
+	at com.intellij.psi.impl.CompositeShortNamesCache.processFieldsWithName(CompositeShortNamesCache.java:273)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportConstantFix.getMembersToImport(StaticImportConstantFix.java:74)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.doFix(StaticImportMemberFix.java:108)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.showHint(StaticImportMemberFix.java:152)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.showAddImportHint(ShowAutoImportPass.java:147)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.addImports(ShowAutoImportPass.java:97)
+	at com.intellij.openapi.application.TransactionGuardImpl.runSyncTransaction(TransactionGuardImpl.java:88)
+	at com.intellij.openapi.application.TransactionGuardImpl.lambda$pollQueueLater$0(TransactionGuardImpl.java:74)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:424)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:407)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:762)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:732)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:822)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:650)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:366)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: $Undo
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:54)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:327)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:618)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:606)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.processFieldsWithName(PsiShortNamesCacheImpl.java:219)
+	at com.intellij.psi.impl.CompositeShortNamesCache.processFieldsWithName(CompositeShortNamesCache.java:273)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportConstantFix.getMembersToImport(StaticImportConstantFix.java:74)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.doFix(StaticImportMemberFix.java:108)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.showHint(StaticImportMemberFix.java:152)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.showAddImportHint(ShowAutoImportPass.java:147)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.addImports(ShowAutoImportPass.java:93)
+	at com.intellij.openapi.application.TransactionGuardImpl.runSyncTransaction(TransactionGuardImpl.java:88)
+	at com.intellij.openapi.application.TransactionGuardImpl.lambda$pollQueueLater$0(TransactionGuardImpl.java:74)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:424)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:407)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:762)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:732)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:822)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:650)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:366)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: $Undo
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:54)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:327)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:618)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:606)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.processFieldsWithName(PsiShortNamesCacheImpl.java:219)
+	at com.intellij.psi.impl.CompositeShortNamesCache.processFieldsWithName(CompositeShortNamesCache.java:273)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportConstantFix.getMembersToImport(StaticImportConstantFix.java:74)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.doFix(StaticImportMemberFix.java:108)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.showHint(StaticImportMemberFix.java:152)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.showAddImportHint(ShowAutoImportPass.java:147)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.addImports(ShowAutoImportPass.java:93)
+	at com.intellij.openapi.application.TransactionGuardImpl.runSyncTransaction(TransactionGuardImpl.java:88)
+	at com.intellij.openapi.application.TransactionGuardImpl.lambda$pollQueueLater$0(TransactionGuardImpl.java:74)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:424)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:407)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:762)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:732)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:822)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:650)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:366)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: $Undo
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:54)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:327)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:618)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:606)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.processFieldsWithName(PsiShortNamesCacheImpl.java:219)
+	at com.intellij.psi.impl.CompositeShortNamesCache.processFieldsWithName(CompositeShortNamesCache.java:273)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportConstantFix.getMembersToImport(StaticImportConstantFix.java:74)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.doFix(StaticImportMemberFix.java:108)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.showHint(StaticImportMemberFix.java:152)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.showAddImportHint(ShowAutoImportPass.java:147)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.addImports(ShowAutoImportPass.java:93)
+	at com.intellij.openapi.application.TransactionGuardImpl.runSyncTransaction(TransactionGuardImpl.java:88)
+	at com.intellij.openapi.application.TransactionGuardImpl.lambda$pollQueueLater$0(TransactionGuardImpl.java:74)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:424)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:407)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:762)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:732)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:822)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:650)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:366)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: $Undo
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:54)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:327)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:618)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:606)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.processFieldsWithName(PsiShortNamesCacheImpl.java:219)
+	at com.intellij.psi.impl.CompositeShortNamesCache.processFieldsWithName(CompositeShortNamesCache.java:273)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportConstantFix.getMembersToImport(StaticImportConstantFix.java:74)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.doFix(StaticImportMemberFix.java:108)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.showHint(StaticImportMemberFix.java:152)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.showAddImportHint(ShowAutoImportPass.java:147)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.addImports(ShowAutoImportPass.java:93)
+	at com.intellij.openapi.application.TransactionGuardImpl.runSyncTransaction(TransactionGuardImpl.java:88)
+	at com.intellij.openapi.application.TransactionGuardImpl.lambda$pollQueueLater$0(TransactionGuardImpl.java:74)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:424)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:407)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:762)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:732)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:822)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:650)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:366)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: $Undo
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:54)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:327)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:618)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:606)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.processFieldsWithName(PsiShortNamesCacheImpl.java:219)
+	at com.intellij.psi.impl.CompositeShortNamesCache.processFieldsWithName(CompositeShortNamesCache.java:273)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportConstantFix.getMembersToImport(StaticImportConstantFix.java:74)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.doFix(StaticImportMemberFix.java:108)
+	at com.intellij.codeInsight.daemon.impl.quickfix.StaticImportMemberFix.showHint(StaticImportMemberFix.java:152)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.showAddImportHint(ShowAutoImportPass.java:147)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.addImports(ShowAutoImportPass.java:93)
+	at com.intellij.openapi.application.TransactionGuardImpl.runSyncTransaction(TransactionGuardImpl.java:88)
+	at com.intellij.openapi.application.TransactionGuardImpl.lambda$submitTransaction$1(TransactionGuardImpl.java:111)
+	at com.intellij.openapi.application.TransactionGuardImpl.submitTransaction(TransactionGuardImpl.java:120)
+	at com.intellij.openapi.application.TransactionGuard.submitTransaction(TransactionGuard.java:122)
+	at com.intellij.codeInsight.daemon.impl.ShowAutoImportPass.doApplyInformationToEditor(ShowAutoImportPass.java:77)
+	at com.intellij.codeHighlighting.TextEditorHighlightingPass.applyInformationToEditor(TextEditorHighlightingPass.java:115)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService.lambda$applyInformationToEditorsLater$3(PassExecutorService.java:504)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:315)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:424)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:407)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:762)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:732)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:822)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:650)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:366)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-22 23:54:56 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: $Undo
+2018-05-22 23:55:11 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-22 23:56:11 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-22 23:57:11 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-22 23:58:11 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-22 23:59:03 INFO  ApacheHttpClient.testConnection(187) - responseCode = 200
+2018-05-22 23:59:03 INFO  ApacheHttpClient.testConnection(195) - result = true
+2018-05-22 23:59:11 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-23 00:00:11 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-23 00:01:11 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-23 00:02:11 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-23 00:03:11 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-23 00:04:11 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-23 00:05:11 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-23 00:06:11 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
+2018-05-23 00:06:11 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
+2018-05-23 00:06:11 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-23 00:06:11 INFO  ApacheHttpClient.getTask(421) - responseCode = 200
+2018-05-23 00:06:14 INFO  ApacheHttpClient.completed(27) - responseCode = 200
+2018-05-23 00:06:14 INFO  ApacheHttpClient.getTask(421) - responseCode = 200
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
 java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
 	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
 	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
@@ -281,13 +1157,13 @@ java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTyp
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: CheckinProject
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: CheckinProject
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
 java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
 	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
 	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
@@ -364,13 +1240,13 @@ java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTyp
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: CheckinProject
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: CheckinProject
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
 java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
 	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
 	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
@@ -447,13 +1323,13 @@ java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTyp
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: CheckinProject
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: CheckinProject
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
 java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
 	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
 	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
@@ -530,13 +1406,13 @@ java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTyp
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: CheckinProject
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: CheckinProject
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
 java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
 	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
 	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
@@ -613,13 +1489,13 @@ java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTyp
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: CheckinProject
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: CheckinProject
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
 java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
 	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
 	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
@@ -696,13 +1572,13 @@ java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTyp
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: CheckinProject
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: CheckinProject
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
 java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
 	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
 	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
@@ -779,13 +1655,13 @@ java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTyp
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: CheckinProject
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: CheckinProject
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
 java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@512e083f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
 	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
 	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
@@ -862,9 +1738,9 @@ java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTyp
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
-2018-05-22 23:41:39 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: CheckinProject
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-05-23 00:07:02 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: CheckinProject
