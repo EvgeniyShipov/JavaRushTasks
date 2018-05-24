@@ -19,11 +19,15 @@ public class Solution {
         return Arrays.stream(Collections.class.getDeclaredClasses())
                 .filter(clazz -> Modifier.isPrivate(clazz.getModifiers()))
                 .filter(clazz -> Modifier.isStatic(clazz.getModifiers()))
-                .filter(clazz -> Arrays.stream(clazz.getInterfaces()).anyMatch(cl -> cl.equals(List.class) ||
-                        Arrays.stream(clazz.getSuperclass().getInterfaces()).anyMatch(cl2 -> cl2.equals(List.class))))
+                .filter(Solution::isImplementList)
                 .filter(Solution::isThrowIOOBException)
                 .findAny()
                 .orElse(null);
+    }
+
+    private static boolean isImplementList(Class clazz) {
+        return Arrays.stream(clazz.getInterfaces()).anyMatch(cl -> cl.equals(List.class) ||
+                Arrays.stream(clazz.getSuperclass().getInterfaces()).anyMatch(cl2 -> cl2.equals(List.class)));
     }
 
     private static boolean isThrowIOOBException(Class clazz) {
