@@ -19079,3 +19079,437 @@ java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTyp
 2018-06-28 22:51:46 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
 2018-06-28 22:51:46 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
 2018-06-28 22:51:46 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: EditorBackSpace
+2018-06-28 22:51:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 22:51:58 INFO  ApacheHttpClient.testConnection(187) - responseCode = 200
+2018-06-28 22:51:58 INFO  ApacheHttpClient.testConnection(195) - result = true
+2018-06-28 22:52:10 INFO  ApacheHttpClient.testConnection(187) - responseCode = 200
+2018-06-28 22:52:10 INFO  ApacheHttpClient.testConnection(195) - result = true
+2018-06-28 22:52:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 22:53:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 22:54:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 22:55:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 22:56:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 22:57:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 22:58:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 22:59:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 23:00:20 INFO  ApacheHttpClient.getWebResourceAsStream(434) - responseCode = 200
+2018-06-28 23:00:20 INFO  ApacheHttpClient.getFilteredTasks(321) - responseCode = 200
+2018-06-28 23:00:23 INFO  ApacheHttpClient.getTaskTemplateInfo(338) - responseCode = 200
+2018-06-28 23:00:27 INFO  ApacheHttpClient.testConnection(187) - responseCode = 200
+2018-06-28 23:00:27 INFO  ApacheHttpClient.testConnection(195) - result = true
+2018-06-28 23:00:27 INFO  ApacheHttpClient.testConnection(187) - responseCode = 200
+2018-06-28 23:00:27 INFO  ApacheHttpClient.testConnection(195) - result = true
+2018-06-28 23:00:27 INFO  ApacheHttpClient.getWebResourceAsStream(434) - responseCode = 200
+2018-06-28 23:00:31 INFO  ApacheHttpClient.getWebResourceAsStream(434) - responseCode = 200
+2018-06-28 23:00:31 INFO  ApacheHttpClient.getFilteredTasks(321) - responseCode = 200
+2018-06-28 23:00:49 INFO  ApacheHttpClient.testConnection(187) - responseCode = 200
+2018-06-28 23:00:49 INFO  ApacheHttpClient.testConnection(195) - result = true
+2018-06-28 23:00:58 INFO  ApacheHttpClient.getWebResourceAsStream(434) - responseCode = 200
+2018-06-28 23:00:58 INFO  ApacheHttpClient.getFilteredTasks(321) - responseCode = 200
+2018-06-28 23:01:00 INFO  ApacheHttpClient.getTaskTemplateInfo(338) - responseCode = 200
+2018-06-28 23:01:00 INFO  ApacheHttpClient.testConnection(187) - responseCode = 200
+2018-06-28 23:01:00 INFO  ApacheHttpClient.testConnection(195) - result = true
+2018-06-28 23:01:00 INFO  ApacheHttpClient.testConnection(187) - responseCode = 200
+2018-06-28 23:01:00 INFO  ApacheHttpClient.testConnection(195) - result = true
+2018-06-28 23:01:00 INFO  ApacheHttpClient.getWebResourceAsStream(434) - responseCode = 200
+2018-06-28 23:01:02 INFO  ApacheHttpClient.getWebResourceAsStream(434) - responseCode = 200
+2018-06-28 23:01:02 INFO  ApacheHttpClient.getFilteredTasks(321) - responseCode = 200
+2018-06-28 23:01:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 23:02:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 23:03:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 23:04:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 23:05:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 23:06:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 23:07:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 23:08:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 23:09:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 23:10:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 23:11:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 23:12:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 23:13:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 23:14:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 23:15:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 23:16:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 23:17:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 23:18:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 23:19:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 23:20:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 23:21:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 23:22:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 23:23:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 23:24:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 23:25:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 23:26:57 INFO  ApacheHttpClient.sendEvent(467) - responseCode = 200
+2018-06-28 23:27:20 INFO  ApacheHttpClient.getWebResourceAsStream(434) - responseCode = 200
+2018-06-28 23:27:21 INFO  ApacheHttpClient.getWebResourceAsStream(434) - responseCode = 200
+2018-06-28 23:27:21 INFO  ApacheHttpClient.getTask(419) - responseCode = 200
+2018-06-28 23:27:22 INFO  ApacheHttpClient.completed(27) - responseCode = 200
+2018-06-28 23:27:22 INFO  ApacheHttpClient.getTask(419) - responseCode = 200
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@32765b8f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@32765b8f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:54)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:327)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:618)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:606)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:145)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:134)
+	at com.intellij.lang.properties.psi.PropertyKeyIndex.get(PropertyKeyIndex.java:47)
+	at com.intellij.lang.properties.PropertiesImplUtil.findPropertiesByKey(PropertiesImplUtil.java:129)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection.getWidestUseScope(UnusedPropertyInspection.java:71)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection.isPropertyUsed(UnusedPropertyInspection.java:147)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection.access$000(UnusedPropertyInspection.java:51)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection$1.visitElement(UnusedPropertyInspection.java:101)
+	at com.intellij.psi.impl.PsiElementBase.accept(PsiElementBase.java:274)
+	at com.intellij.codeInspection.InspectionEngine.acceptElements(InspectionEngine.java:82)
+	at com.intellij.codeInspection.InspectionEngine.createVisitorAndAcceptElements(InspectionEngine.java:70)
+	at com.intellij.codeInsight.daemon.impl.LocalInspectionsPass.runToolOnElements(LocalInspectionsPass.java:286)
+	at com.intellij.codeInsight.daemon.impl.LocalInspectionsPass.lambda$visitPriorityElementsAndInit$3(LocalInspectionsPass.java:254)
+	at com.intellij.concurrency.ApplierCompleter.execAndForkSubTasks(ApplierCompleter.java:133)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1127)
+	at com.intellij.concurrency.ApplierCompleter.lambda$wrapInReadActionAndIndicator$1(ApplierCompleter.java:105)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:543)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:488)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:94)
+	at com.intellij.concurrency.ApplierCompleter.wrapInReadActionAndIndicator(ApplierCompleter.java:116)
+	at com.intellij.concurrency.ApplierCompleter.lambda$compute$0(ApplierCompleter.java:96)
+	at com.intellij.openapi.application.impl.ReadMostlyRWLock.executeByImpatientReader(ReadMostlyRWLock.java:143)
+	at com.intellij.openapi.application.impl.ApplicationImpl.executeByImpatientReader(ApplicationImpl.java:229)
+	at com.intellij.concurrency.ApplierCompleter.compute(ApplierCompleter.java:96)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: EditorDelete
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@32765b8f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@32765b8f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:54)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:327)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:618)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:606)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:145)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:134)
+	at com.intellij.lang.properties.psi.PropertyKeyIndex.get(PropertyKeyIndex.java:47)
+	at com.intellij.lang.properties.PropertiesImplUtil.findPropertiesByKey(PropertiesImplUtil.java:129)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection.getWidestUseScope(UnusedPropertyInspection.java:71)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection.isPropertyUsed(UnusedPropertyInspection.java:147)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection.access$000(UnusedPropertyInspection.java:51)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection$1.visitElement(UnusedPropertyInspection.java:101)
+	at com.intellij.psi.impl.PsiElementBase.accept(PsiElementBase.java:274)
+	at com.intellij.codeInspection.InspectionEngine.acceptElements(InspectionEngine.java:82)
+	at com.intellij.codeInspection.InspectionEngine.createVisitorAndAcceptElements(InspectionEngine.java:70)
+	at com.intellij.codeInsight.daemon.impl.LocalInspectionsPass.runToolOnElements(LocalInspectionsPass.java:286)
+	at com.intellij.codeInsight.daemon.impl.LocalInspectionsPass.lambda$visitPriorityElementsAndInit$3(LocalInspectionsPass.java:254)
+	at com.intellij.concurrency.ApplierCompleter.execAndForkSubTasks(ApplierCompleter.java:133)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1127)
+	at com.intellij.concurrency.ApplierCompleter.lambda$wrapInReadActionAndIndicator$1(ApplierCompleter.java:105)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:543)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:488)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:94)
+	at com.intellij.concurrency.ApplierCompleter.wrapInReadActionAndIndicator(ApplierCompleter.java:116)
+	at com.intellij.concurrency.ApplierCompleter.lambda$compute$0(ApplierCompleter.java:96)
+	at com.intellij.openapi.application.impl.ReadMostlyRWLock.executeByImpatientReader(ReadMostlyRWLock.java:143)
+	at com.intellij.openapi.application.impl.ApplicationImpl.executeByImpatientReader(ApplicationImpl.java:229)
+	at com.intellij.concurrency.ApplierCompleter.compute(ApplierCompleter.java:96)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: EditorDelete
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@32765b8f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@32765b8f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:54)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:327)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:618)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:606)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:145)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:134)
+	at com.intellij.lang.properties.psi.PropertyKeyIndex.get(PropertyKeyIndex.java:47)
+	at com.intellij.lang.properties.PropertiesImplUtil.findPropertiesByKey(PropertiesImplUtil.java:129)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection.getWidestUseScope(UnusedPropertyInspection.java:71)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection.isPropertyUsed(UnusedPropertyInspection.java:147)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection.access$000(UnusedPropertyInspection.java:51)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection$1.visitElement(UnusedPropertyInspection.java:101)
+	at com.intellij.psi.impl.PsiElementBase.accept(PsiElementBase.java:274)
+	at com.intellij.codeInspection.InspectionEngine.acceptElements(InspectionEngine.java:82)
+	at com.intellij.codeInspection.InspectionEngine.createVisitorAndAcceptElements(InspectionEngine.java:70)
+	at com.intellij.codeInsight.daemon.impl.LocalInspectionsPass.runToolOnElements(LocalInspectionsPass.java:286)
+	at com.intellij.codeInsight.daemon.impl.LocalInspectionsPass.lambda$visitPriorityElementsAndInit$3(LocalInspectionsPass.java:254)
+	at com.intellij.concurrency.ApplierCompleter.execAndForkSubTasks(ApplierCompleter.java:133)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1127)
+	at com.intellij.concurrency.ApplierCompleter.lambda$wrapInReadActionAndIndicator$1(ApplierCompleter.java:105)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:543)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:488)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:94)
+	at com.intellij.concurrency.ApplierCompleter.wrapInReadActionAndIndicator(ApplierCompleter.java:116)
+	at com.intellij.concurrency.ApplierCompleter.lambda$compute$0(ApplierCompleter.java:96)
+	at com.intellij.openapi.application.impl.ReadMostlyRWLock.executeByImpatientReader(ReadMostlyRWLock.java:143)
+	at com.intellij.openapi.application.impl.ApplicationImpl.executeByImpatientReader(ApplicationImpl.java:229)
+	at com.intellij.concurrency.ApplierCompleter.compute(ApplierCompleter.java:96)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: EditorDelete
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@32765b8f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@32765b8f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:54)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:327)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:618)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:606)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:145)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:134)
+	at com.intellij.lang.properties.psi.PropertyKeyIndex.get(PropertyKeyIndex.java:47)
+	at com.intellij.lang.properties.PropertiesImplUtil.findPropertiesByKey(PropertiesImplUtil.java:129)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection.getWidestUseScope(UnusedPropertyInspection.java:71)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection.isPropertyUsed(UnusedPropertyInspection.java:147)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection.access$000(UnusedPropertyInspection.java:51)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection$1.visitElement(UnusedPropertyInspection.java:101)
+	at com.intellij.psi.impl.PsiElementBase.accept(PsiElementBase.java:274)
+	at com.intellij.codeInspection.InspectionEngine.acceptElements(InspectionEngine.java:82)
+	at com.intellij.codeInspection.InspectionEngine.createVisitorAndAcceptElements(InspectionEngine.java:70)
+	at com.intellij.codeInsight.daemon.impl.LocalInspectionsPass.runToolOnElements(LocalInspectionsPass.java:286)
+	at com.intellij.codeInsight.daemon.impl.LocalInspectionsPass.lambda$visitPriorityElementsAndInit$3(LocalInspectionsPass.java:254)
+	at com.intellij.concurrency.ApplierCompleter.execAndForkSubTasks(ApplierCompleter.java:133)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1127)
+	at com.intellij.concurrency.ApplierCompleter.lambda$wrapInReadActionAndIndicator$1(ApplierCompleter.java:105)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:543)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:488)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:94)
+	at com.intellij.concurrency.ApplierCompleter.wrapInReadActionAndIndicator(ApplierCompleter.java:116)
+	at com.intellij.concurrency.ApplierCompleter.lambda$compute$0(ApplierCompleter.java:96)
+	at com.intellij.openapi.application.impl.ReadMostlyRWLock.executeByImpatientReader(ReadMostlyRWLock.java:143)
+	at com.intellij.openapi.application.impl.ApplicationImpl.executeByImpatientReader(ApplicationImpl.java:229)
+	at com.intellij.concurrency.ApplierCompleter.compute(ApplierCompleter.java:96)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: EditorDelete
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@32765b8f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@32765b8f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:54)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:327)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:618)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:606)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:145)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:134)
+	at com.intellij.lang.properties.psi.PropertyKeyIndex.get(PropertyKeyIndex.java:47)
+	at com.intellij.lang.properties.PropertiesImplUtil.findPropertiesByKey(PropertiesImplUtil.java:129)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection.getWidestUseScope(UnusedPropertyInspection.java:71)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection.isPropertyUsed(UnusedPropertyInspection.java:147)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection.access$000(UnusedPropertyInspection.java:51)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection$1.visitElement(UnusedPropertyInspection.java:101)
+	at com.intellij.psi.impl.PsiElementBase.accept(PsiElementBase.java:274)
+	at com.intellij.codeInspection.InspectionEngine.acceptElements(InspectionEngine.java:82)
+	at com.intellij.codeInspection.InspectionEngine.createVisitorAndAcceptElements(InspectionEngine.java:70)
+	at com.intellij.codeInsight.daemon.impl.LocalInspectionsPass.runToolOnElements(LocalInspectionsPass.java:286)
+	at com.intellij.codeInsight.daemon.impl.LocalInspectionsPass.lambda$visitPriorityElementsAndInit$3(LocalInspectionsPass.java:254)
+	at com.intellij.concurrency.ApplierCompleter.execAndForkSubTasks(ApplierCompleter.java:133)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1127)
+	at com.intellij.concurrency.ApplierCompleter.lambda$wrapInReadActionAndIndicator$1(ApplierCompleter.java:105)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:543)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:488)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:94)
+	at com.intellij.concurrency.ApplierCompleter.wrapInReadActionAndIndicator(ApplierCompleter.java:116)
+	at com.intellij.concurrency.ApplierCompleter.lambda$compute$0(ApplierCompleter.java:96)
+	at com.intellij.openapi.application.impl.ReadMostlyRWLock.executeByImpatientReader(ReadMostlyRWLock.java:143)
+	at com.intellij.openapi.application.impl.ApplicationImpl.executeByImpatientReader(ApplicationImpl.java:229)
+	at com.intellij.concurrency.ApplierCompleter.compute(ApplierCompleter.java:96)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: EditorDelete
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@32765b8f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@32765b8f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:54)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:327)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:618)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:606)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:145)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:134)
+	at com.intellij.lang.properties.psi.PropertyKeyIndex.get(PropertyKeyIndex.java:47)
+	at com.intellij.lang.properties.PropertiesImplUtil.findPropertiesByKey(PropertiesImplUtil.java:129)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection.getWidestUseScope(UnusedPropertyInspection.java:71)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection.isPropertyUsed(UnusedPropertyInspection.java:147)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection.access$000(UnusedPropertyInspection.java:51)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection$1.visitElement(UnusedPropertyInspection.java:101)
+	at com.intellij.psi.impl.PsiElementBase.accept(PsiElementBase.java:274)
+	at com.intellij.codeInspection.InspectionEngine.acceptElements(InspectionEngine.java:82)
+	at com.intellij.codeInspection.InspectionEngine.createVisitorAndAcceptElements(InspectionEngine.java:70)
+	at com.intellij.codeInsight.daemon.impl.LocalInspectionsPass.runToolOnElements(LocalInspectionsPass.java:286)
+	at com.intellij.codeInsight.daemon.impl.LocalInspectionsPass.lambda$visitPriorityElementsAndInit$3(LocalInspectionsPass.java:254)
+	at com.intellij.concurrency.ApplierCompleter.execAndForkSubTasks(ApplierCompleter.java:133)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1127)
+	at com.intellij.concurrency.ApplierCompleter.lambda$wrapInReadActionAndIndicator$1(ApplierCompleter.java:105)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:543)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:488)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:94)
+	at com.intellij.concurrency.ApplierCompleter.wrapInReadActionAndIndicator(ApplierCompleter.java:116)
+	at com.intellij.concurrency.ApplierCompleter.lambda$compute$0(ApplierCompleter.java:96)
+	at com.intellij.openapi.application.impl.ReadMostlyRWLock.executeByImpatientReader(ReadMostlyRWLock.java:143)
+	at com.intellij.openapi.application.impl.ApplicationImpl.executeByImpatientReader(ApplicationImpl.java:229)
+	at com.intellij.concurrency.ApplierCompleter.compute(ApplierCompleter.java:96)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: EditorDelete
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@32765b8f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@32765b8f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:54)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:327)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:618)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:606)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:145)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:134)
+	at com.intellij.lang.properties.psi.PropertyKeyIndex.get(PropertyKeyIndex.java:47)
+	at com.intellij.lang.properties.PropertiesImplUtil.findPropertiesByKey(PropertiesImplUtil.java:129)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection.getWidestUseScope(UnusedPropertyInspection.java:71)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection.isPropertyUsed(UnusedPropertyInspection.java:147)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection.access$000(UnusedPropertyInspection.java:51)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection$1.visitElement(UnusedPropertyInspection.java:101)
+	at com.intellij.psi.impl.PsiElementBase.accept(PsiElementBase.java:274)
+	at com.intellij.codeInspection.InspectionEngine.acceptElements(InspectionEngine.java:82)
+	at com.intellij.codeInspection.InspectionEngine.createVisitorAndAcceptElements(InspectionEngine.java:70)
+	at com.intellij.codeInsight.daemon.impl.LocalInspectionsPass.runToolOnElements(LocalInspectionsPass.java:286)
+	at com.intellij.codeInsight.daemon.impl.LocalInspectionsPass.lambda$visitPriorityElementsAndInit$3(LocalInspectionsPass.java:254)
+	at com.intellij.concurrency.ApplierCompleter.execAndForkSubTasks(ApplierCompleter.java:133)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1127)
+	at com.intellij.concurrency.ApplierCompleter.lambda$wrapInReadActionAndIndicator$1(ApplierCompleter.java:105)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:543)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:488)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:94)
+	at com.intellij.concurrency.ApplierCompleter.wrapInReadActionAndIndicator(ApplierCompleter.java:116)
+	at com.intellij.concurrency.ApplierCompleter.lambda$compute$0(ApplierCompleter.java:96)
+	at com.intellij.openapi.application.impl.ReadMostlyRWLock.executeByImpatientReader(ReadMostlyRWLock.java:143)
+	at com.intellij.openapi.application.impl.ApplicationImpl.executeByImpatientReader(ApplicationImpl.java:229)
+	at com.intellij.concurrency.ApplierCompleter.compute(ApplierCompleter.java:96)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: EditorDelete
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.error(130) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@32765b8f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@32765b8f, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:136)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:103)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:54)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:327)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:618)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:606)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:62)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:356)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:319)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:145)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:134)
+	at com.intellij.lang.properties.psi.PropertyKeyIndex.get(PropertyKeyIndex.java:47)
+	at com.intellij.lang.properties.PropertiesImplUtil.findPropertiesByKey(PropertiesImplUtil.java:129)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection.getWidestUseScope(UnusedPropertyInspection.java:71)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection.isPropertyUsed(UnusedPropertyInspection.java:147)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection.access$000(UnusedPropertyInspection.java:51)
+	at com.intellij.codeInspection.unused.UnusedPropertyInspection$1.visitElement(UnusedPropertyInspection.java:101)
+	at com.intellij.psi.impl.PsiElementBase.accept(PsiElementBase.java:274)
+	at com.intellij.codeInspection.InspectionEngine.acceptElements(InspectionEngine.java:82)
+	at com.intellij.codeInspection.InspectionEngine.createVisitorAndAcceptElements(InspectionEngine.java:70)
+	at com.intellij.codeInsight.daemon.impl.LocalInspectionsPass.runToolOnElements(LocalInspectionsPass.java:286)
+	at com.intellij.codeInsight.daemon.impl.LocalInspectionsPass.lambda$visitPriorityElementsAndInit$3(LocalInspectionsPass.java:254)
+	at com.intellij.concurrency.ApplierCompleter.execAndForkSubTasks(ApplierCompleter.java:133)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1127)
+	at com.intellij.concurrency.ApplierCompleter.lambda$wrapInReadActionAndIndicator$1(ApplierCompleter.java:105)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:543)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:488)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:94)
+	at com.intellij.concurrency.ApplierCompleter.wrapInReadActionAndIndicator(ApplierCompleter.java:116)
+	at com.intellij.concurrency.ApplierCompleter.lambda$compute$0(ApplierCompleter.java:96)
+	at com.intellij.openapi.application.impl.ReadMostlyRWLock.executeByImpatientReader(ReadMostlyRWLock.java:143)
+	at com.intellij.openapi.application.impl.ApplicationImpl.executeByImpatientReader(ApplicationImpl.java:229)
+	at com.intellij.concurrency.ApplierCompleter.compute(ApplierCompleter.java:96)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(138) - IntelliJ IDEA 2017.3.5  Build #IC-173.4674.33
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(145) - JDK: 1.8.0_152-release
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(146) - VM: OpenJDK 64-Bit Server VM
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(147) - Vendor: JetBrains s.r.o
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(148) - OS: Windows 10
+2018-06-28 23:27:45 ERROR StubProcessingHelperBase.logErrorHeader(154) - Last Action: EditorDelete
