@@ -20,5 +20,6 @@
     <orderEntry type="library" name="org.eclipse.ecf:org.apache.httpcomponents.httpcore:4.4.6.v20170210-0925" level="application" />
     <orderEntry type="library" name="org.appdapter:ext.bundle.apache_httpclient:1.2.3" level="application" />
     <orderEntry type="library" name="javax.mail:mail:1.4" level="application" />
+    <orderEntry type="library" name="org.jsoup:jsoup:1.11.3" level="application" />
   </component>
 </module>
