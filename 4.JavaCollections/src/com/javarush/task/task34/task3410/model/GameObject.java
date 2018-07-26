@@ -3,8 +3,8 @@ package com.javarush.task.task34.task3410.model;
 import java.awt.*;
 
 public abstract class GameObject {
-    private int x;
-    private int y;
+    protected int x;
+    protected int y;
     private int width;
     private int height;
 
