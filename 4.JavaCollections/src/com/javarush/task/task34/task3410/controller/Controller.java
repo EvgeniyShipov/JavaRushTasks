@@ -8,11 +8,12 @@ public class Controller {
     private final Model model;
 
     public Controller() {
-        view = new View(this);
         model = new Model();
+        view = new View(this);
+        view.init();
     }
 
     public static void main(String[] args) {
-
+        Controller controller = new Controller();
     }
 }
