@@ -10,8 +10,8 @@ public class Box extends CollisionObject implements Movable {
 
     @Override
     public void move(int x, int y) {
-        this.x += x;
-        this.y += y;
+        setX(getX() + x);
+        setY(getY() + y);
     }
 
     @Override
