@@ -3,6 +3,7 @@ package com.javarush.task.task34.task3410.model;
 import java.nio.file.Path;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Random;
 import java.util.Set;
 
 import static com.javarush.task.task34.task3410.model.Model.FIELD_CELL_SIZE;
@@ -25,5 +26,9 @@ public class LevelLoader {
         Player player = new Player(FIELD_CELL_SIZE, FIELD_CELL_SIZE);
 
         return new GameObjects(walls, boxes, homes, player);
+    }
+
+    private int random() {
+        return FIELD_CELL_SIZE * new Random().nextInt(10);
     }
 }
